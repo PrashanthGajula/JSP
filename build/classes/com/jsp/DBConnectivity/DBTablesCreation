@@ -1,0 +1,17 @@
+DB Table Creation
+
+drop table users;
+
+CREATE TABLE `jsp`.`users` (
+  `uid` VARCHAR(45) NOT NULL COMMENT '',
+  `name` VARCHAR(45) NOT NULL COMMENT '',
+  `password` VARCHAR(45) NOT NULL COMMENT '',
+  `phone` VARCHAR(11) NULL COMMENT '',
+  `email` VARCHAR(45) NULL COMMENT '',
+  `address` VARCHAR(150) NULL COMMENT '',
+  `languages` VARCHAR(45) NULL COMMENT '',
+  PRIMARY KEY (`uid`)  COMMENT '');
+  
+  
+  insert into users(uid, name, password, phone, email, address, languages) values("101", "Prashanth", "password", 3619448885, "pgajula8@gmail.com", "Dallas,TX", "Telugu");
+  
